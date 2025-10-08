@@ -1,4 +1,4 @@
 from django.shortcuts import render, HttpResponse
 
 def start(request):
-    return render(request, 'menu.html', {})
+    return render(request, 'index.html', {})
