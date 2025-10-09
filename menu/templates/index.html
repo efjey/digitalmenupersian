@@ -352,30 +352,30 @@
           <div class="col-lg-5">
             <div class="chef-highlight" data-aos="fade-right" data-aos-delay="200">
               <figure class="chef-image">
-                <img src="assets/img/restaurant/chef-1.webp" class="img-fluid" alt="Executive Chef">
+                <img src="{% static 'assets/img/restaurant/chef-1.webp'%}" class="img-fluid" alt="Executive Chef">
               </figure>
               <div class="chef-details">
                 <h3>Executive Chef</h3>
-                <h2>Gabriel Turner</h2>
+                <h2>صبا مجد</h2>
                 <div class="chef-awards">
-                  <span><i class="bi bi-star-fill"></i> James Beard Award</span>
-                  <span><i class="bi bi-star-fill"></i> Two Michelin Stars</span>
+                  <span><i class="bi bi-star-fill"></i>LG National 2012 Dubai</span>
+                  <span><i class="bi bi-star-fill"></i>مربی رسمی فنی حرفه ای </span>
                 </div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor nisi elit.</p>
+                <p>سرآشپز بین الملی مجموعه با 15 سال سابقه کار حرفه ای در زمینه آشپزی و تحصیل در همین زمینه</p>
                 <div class="chef-signature">
-                  <img src="assets/img/misc/signature-1.webp" alt="Chef Signature">
+                  <img src="{% static 'assets/img/misc/signature-1.webp' %}" alt="Chef Signature">
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-7">
+           <div class="col-lg-7">
             <div class="team-container" data-aos="fade-left" data-aos-delay="300">
               <div class="row g-4">
                 <div class="col-md-6">
                   <div class="chef-card" data-aos="zoom-in" data-aos-delay="200">
                     <div class="chef-img">
-                      <img src="assets/img/restaurant/chef-2.webp" class="img-fluid" alt="Chef Portrait">
+                      <img src="{% static 'assets/img/restaurant/chef-2.webp'%}" class="img-fluid" alt="Chef Portrait">
                       <div class="social-links">
                         <a href="#"><i class="bi bi-instagram"></i></a>
                         <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -383,9 +383,9 @@
                       </div>
                     </div>
                     <div class="chef-info">
-                      <h4>Sophia Martinez</h4>
-                      <p class="role">Pastry Chef</p>
-                      <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim purus a ipsum faucibus, et porttitor.</p>
+                      <h4>خانم فاطمی</h4>
+                      <p class="role">سرآشپز شعبه بابل </p>
+                      <p class="details">دست پخت عالی و مدیریت آشپزخانه شعبه بابل</p>
                     </div>
                   </div>
                 </div>
@@ -393,7 +393,7 @@
                 <div class="col-md-6">
                   <div class="chef-card" data-aos="zoom-in" data-aos-delay="250">
                     <div class="chef-img">
-                      <img src="assets/img/restaurant/chef-3.webp" class="img-fluid" alt="Chef Portrait">
+                      <img src="{% static 'assets/img/restaurant/chef-3.webp'%}" class="img-fluid" alt="Chef Portrait">
                       <div class="social-links">
                         <a href="#"><i class="bi bi-instagram"></i></a>
                         <a href="#"><i class="bi bi-twitter-x"></i></a>
@@ -401,14 +401,14 @@
                       </div>
                     </div>
                     <div class="chef-info">
-                      <h4>Marcus Chen</h4>
-                      <p class="role">Sous Chef</p>
+                      <h4>خانم محمدی</h4>
+                      <p class="role">دستیار سرآشپز شعبه بابل</p>
                       <p class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dignissim purus a ipsum faucibus, et porttitor.</p>
                     </div>
                   </div>
                 </div>
 
-                <div class="col-md-6">
+                {% comment %} <div class="col-md-6">
                   <div class="chef-card" data-aos="zoom-in" data-aos-delay="300">
                     <div class="chef-img">
                       <img src="assets/img/restaurant/chef-4.webp" class="img-fluid" alt="Chef Portrait">
@@ -443,9 +443,9 @@
                     </div>
                   </div>
                 </div>
-              </div>
+              </div> {% endcomment %}
             </div>
-          </div>
+          </div> 
         </div>
 
       </div>
@@ -567,8 +567,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Location</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>لوکیشن</h2>
+        <p>خیلی خوشحال میشیم روی گلتونو ببینیم =)</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -583,8 +583,8 @@
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <div class="info-container">
               <div class="section-header">
-                <h2>Find Us</h2>
-                <p>Visit Us Today</p>
+                <h2>شعبه بابل</h2>
+                <p>بهمون سر بزن</p>
               </div>
 
               <div class="info-card" data-aos="fade-up" data-aos-delay="300">
@@ -592,8 +592,8 @@
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="info-content">
-                  <h3>Our Location</h3>
-                  <p>123 Culinary Avenue, Manhattan, NY 10001</p>
+                  <h3>آدرس</h3>
+                  <p>بابل، توحید43، رو به روی یعقوبی 6</p>
                 </div>
               </div>
 
@@ -602,9 +602,9 @@
                   <i class="bi bi-telephone"></i>
                 </div>
                 <div class="info-content">
-                  <h3>Reservations</h3>
-                  <p>+1 (212) 555-7890</p>
-                  <p class="small-text">We recommend making reservations at least 48 hours in advance</p>
+                  <h3>تماس</h3>
+                  <p>01132310010</p>
+                  <p class="small-text">میتونید قبل اومدن تماس بگیرید که سفارشتون رو آماده کنیم و وقت طلاییتون حیف نشه</p>
                 </div>
               </div>
 
@@ -613,26 +613,26 @@
                   <i class="bi bi-clock"></i>
                 </div>
                 <div class="info-content">
-                  <h3>Hours</h3>
+                  <h3>ساعت کاری</h3>
                   <div class="hours-grid">
-                    <div class="day">Monday - Thursday</div>
-                    <div class="time">11:00 AM - 10:00 PM</div>
+                    <div class="day">شنبه - پنجشنبه</div>
+                    <div class="time">12:00 PM - 16:30 PM</div>
 
-                    <div class="day">Friday - Saturday</div>
+                    {% comment %} <div class="day">Friday - Saturday</div>
                     <div class="time">11:00 AM - 11:30 PM</div>
 
                     <div class="day">Sunday</div>
-                    <div class="time">10:00 AM - 9:00 PM</div>
+                    <div class="time">10:00 AM - 9:00 PM</div> {% endcomment %}
 
-                    <div class="day">Brunch Hours</div>
-                    <div class="time">Sat &amp; Sun, 10:00 AM - 2:00 PM</div>
+                    <div class="day">تعطیلی</div>
+                    <div class="time">جمعه ها، 1 تا 3 فروردین، عاشورا و تاسوعا</div>
                   </div>
                 </div>
               </div>
 
               <div class="cta-wrapper" data-aos="fade-up" data-aos-delay="600">
-                <a href="#" class="btn-book">Make a Reservation</a>
-                <a href="#" class="btn-contact">Contact Us</a>
+                <a href="menu/" class="btn-book">بازگشت به منو</a>
+                <a href="#" class="btn-contact">تماس با ما</a>
               </div>
             </div>
           </div>
@@ -646,8 +646,8 @@
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
             <div class="info-container">
               <div class="section-header">
-                <h2>Find Us</h2>
-                <p>Visit Us Today</p>
+                <h2>شعبه بابلسر</h2>
+                <p>چی بهتر از غذای خوشمزه ایرانی </p>
               </div>
 
               <div class="info-card" data-aos="fade-up" data-aos-delay="300">
@@ -655,8 +655,8 @@
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <div class="info-content">
-                  <h3>Our Location</h3>
-                  <p>123 Culinary Avenue, Manhattan, NY 10001</p>
+                  <h3>آدرس ما</h3>
+                  <p>کمربندی بابلسر / فریدونکنار، رو به روی دریاکنار، بعد از چای گلستان</p>
                 </div>
               </div>
 
@@ -665,9 +665,9 @@
                   <i class="bi bi-telephone"></i>
                 </div>
                 <div class="info-content">
-                  <h3>Reservations</h3>
-                  <p>+1 (212) 555-7890</p>
-                  <p class="small-text">We recommend making reservations at least 48 hours in advance</p>
+                  <h3>تماس</h3>
+                  <p>01135274418</p>
+                  <p class="small-text">میتونید از قبل تماس بگیرید که زمان دلخواه غذا براتون آماده باشه</p>
                 </div>
               </div>
 
@@ -676,26 +676,26 @@
                   <i class="bi bi-clock"></i>
                 </div>
                 <div class="info-content">
-                  <h3>Hours</h3>
+                  <h3>ساعت کاری</h3>
                   <div class="hours-grid">
-                    <div class="day">Monday - Thursday</div>
-                    <div class="time">11:00 AM - 10:00 PM</div>
+                    <div class="day">هر روز هفته</div>
+                    <div class="time">12:00 PM - 17:00 PM</div>
 
-                    <div class="day">Friday - Saturday</div>
+                    {% comment %} <div class="day">Friday - Saturday</div>
                     <div class="time">11:00 AM - 11:30 PM</div>
 
                     <div class="day">Sunday</div>
-                    <div class="time">10:00 AM - 9:00 PM</div>
+                    <div class="time">10:00 AM - 9:00 PM</div> {% endcomment %}
 
-                    <div class="day">Brunch Hours</div>
-                    <div class="time">Sat &amp; Sun, 10:00 AM - 2:00 PM</div>
+                    <div class="day">تعطیلات</div>
+                    <div class="time">عاشورا و تاسوعا</div>
                   </div>
                 </div>
               </div>
 
               <div class="cta-wrapper" data-aos="fade-up" data-aos-delay="600">
-                <a href="#" class="btn-book">Make a Reservation</a>
-                <a href="#" class="btn-contact">Contact Us</a>
+                <a href="menu/" class="btn-book">بازگشت به منو</a>
+                <a href="#" class="btn-contact">تماس با ما</a>
               </div>
             </div>
           </div>
@@ -713,18 +713,18 @@
         <div class="row align-items-center gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <div class="about-content">
-              <h3>Our Culinary Journey</h3>
+              <h3>داستان مجد</h3>
               <p class="fst-italic">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
               <p>Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risustristique pos uere. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 
               <div class="chef-signature mt-4">
                 <div class="row align-items-center">
                   <div class="col-auto">
-                    <img src="assets/img/restaurant/chef-1.webp" class="chef-avatar rounded-circle" alt="Chef Portrait">
+                    <img src="{% static 'assets/img/restaurant/chef-1.webp'%}" class="chef-avatar rounded-circle" alt="Chef Portrait">
                   </div>
                   <div class="col">
-                    <p class="chef-message mb-2">"Cooking is a language through which all the following properties may be expressed: harmony, creativity, happiness, beauty, poetry, complexity, magic, humor, provocation and culture."</p>
-                    <p class="chef-name">Executive Chef</p>
+                    <p class="chef-message mb-2">"آشپزی زبانی است که از طریق آن می‌توان تمام ویژگی‌های زیر را بیان کرد: هماهنگی، خلاقیت، شادی، زیبایی، شعر، پیچیدگی، جادو، طنز، تحریک و فرهنگ"</p>
+                    <p class="chef-name">سرآشپز مجد</p>
                   </div>
                 </div>
               </div>
@@ -733,9 +733,9 @@
 
           <div class="col-lg-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="about-image-wrapper">
-              <img src="assets/img/restaurant/showcase-4.webp" class="img-fluid main-image shadow" alt="Restaurant Interior">
-              <img src="assets/img/restaurant/showcase-2.webp" class="img-fluid accent-image shadow" alt="Chef Preparing Food">
-              <span class="establishment-year d-flex align-items-center justify-content-center text-center">Est. 2005</span>
+              <img src="{% static 'assets/img/restaurant/showcase-4.webp' %}" class="img-fluid main-image shadow" alt="Restaurant Interior">
+              <img src="{% static 'assets/img/restaurant/showcase-2.webp' %}" class="img-fluid accent-image shadow" alt="Chef Preparing Food">
+              <span class="establishment-year d-flex align-items-center justify-content-center text-center">Est. 2019</span>
             </div>
           </div>
         </div>
@@ -746,8 +746,8 @@
               <div class="feature-icon">
                 <i class="bi bi-award"></i>
               </div>
-              <h4>Award Winning</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros.</p>
+              <h4>جوایز</h4>
+              <p>- کار آفرین بر تر سال 1401</p>
             </div>
           </div>
 
@@ -756,8 +756,8 @@
               <div class="feature-icon">
                 <i class="bi bi-egg-fried"></i>
               </div>
-              <h4>Fresh Ingredients</h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+              <h4>مواد اولیه تازه</h4>
+              <p>تمام غذا ها با بهترین و تازه ترین مواد اولیه پخت میشن</p>
             </div>
           </div>
 
@@ -766,8 +766,8 @@
               <div class="feature-icon">
                 <i class="bi bi-people"></i>
               </div>
-              <h4>Expert Team</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.</p>
+              <h4>تیم حرفه ای</h4>
+              <p>پرسنل مجد از آشپزخانه تا تیم ارسال کاملا حرفه ای، آموزش دیده و علاقه مند به این زشتع هستن</p>
             </div>
           </div>
 
@@ -776,8 +776,8 @@
               <div class="feature-icon">
                 <i class="bi bi-heart"></i>
               </div>
-              <h4>Cooked with Love</h4>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+              <h4>پخته شده با عشق</h4>
+              <p>علاوه بر تمام المان های استاندارد که وضیفه ما رعایت کردن اونها هست، اینجا غذا دارای چشانی عشق هستش و هر لقمه سفری به جزیره مزه هاست</p>
             </div>
           </div>
         </div>
@@ -786,23 +786,23 @@
           <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
             <div class="stats-container">
               <div class="stat-item">
-                <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="0" class="purecounter">15</span>+</span>
-                <p class="stat-label">Years Experience</p>
-              </div>
-
-              <div class="stat-item">
-                <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="0" class="purecounter">5</span></span>
-                <p class="stat-label">Expert Chefs</p>
+                <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="0" class="purecounter">8</span>+</span>
+                <p class="stat-label">سال کاری</p>
               </div>
 
               <div class="stat-item">
                 <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="3" data-purecounter-duration="0" class="purecounter">3</span></span>
-                <p class="stat-label">Culinary Awards</p>
+                <p class="stat-label">سرآشپز خبره</p>
               </div>
 
               <div class="stat-item">
-                <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="15000" data-purecounter-duration="0" class="purecounter">15000</span>+</span>
-                <p class="stat-label">Happy Customers</p>
+                <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="0" class="purecounter">5</span></span>
+                <p class="stat-label">جوایز محلی</p>
+              </div>
+
+              <div class="stat-item">
+                <span class="stat-number"><span data-purecounter-start="0" data-purecounter-end="3500" data-purecounter-duration="0" class="purecounter">3500</span>+</span>
+                <p class="stat-label">باشگاه مشتریان</p>
               </div>
             </div>
           </div>
@@ -958,8 +958,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>نظرات شما</h2>
+        <p>گلچین لطف محبت شما عزیزان به ما از اینستاگرام</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -998,12 +998,12 @@
                   <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                 </div>
                 <p>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                  بهترین مثل همیشه مرسی از غذاهای تازه و خوشمزتون
                 </p>
                 <div class="profile mt-auto">
                   <img src="assets/img/person/person-m-9.webp" class="testimonial-img" alt="">
-                  <h3>Saul Goodman</h3>
-                  <h4>Ceo &amp; Founder</h4>
+                  <h3>سارا دوستی</h3>
+                  <h4>مشتری وفادار</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->
@@ -1122,7 +1122,7 @@
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
             <div class="contact-info-box">
               <div class="icon-box">
-                <i class="bi bi-headset"></i>
+                <i class="bi bi-clock"></i>
               </div>
               <div class="info-content">
                 <h4>ساعت کاری</h4>
