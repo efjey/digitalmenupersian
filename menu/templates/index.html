@@ -43,7 +43,7 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+      <a href="#" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.webp" alt=""> -->
         <i class="bi bi-fork-knife"></i>
@@ -60,12 +60,12 @@
           {% comment %} <li><a href="#events">رویداد ها</a></li> {% endcomment %}
           <li class="dropdown"><a href="#"><span>حساب کاربری</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">Dropdown 1</a></li>
+              <li><a href="#">حساب شما</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">سبدخرید</a></li>
+                  <li><a href="#">سفارشات</a></li>
+                  <li><a href="#">اطلاعات تکمیلی</a></li>
                   <li><a href="#">Deep Dropdown 4</a></li>
                   <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
@@ -80,7 +80,7 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted d-none d-sm-block" href="#menu">منو</a>
+      <a class="btn-getstarted" href="#menu">منو</a>
 
     </div>
   </header>
@@ -194,7 +194,7 @@
                   <div class="menu-item d-flex align-items-center gap-4">
                     <img src="{{ item.picture.url }}" alt="..." class="menu-img img-fluid rounded-3">
                     <div class="menu-content">
-                      <h5>{{ item.name }}<span class="menu-tag">{{ item.tags }}</span></h5>
+                      <h5>{{ item.name }}</h5>
                       <p>{{ item.description }}</p>
                       <div class="price">{{ item.price | intcomma }} تومان </div>
                     </div>

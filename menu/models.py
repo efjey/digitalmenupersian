@@ -29,7 +29,7 @@ class Product(models.Model):
     price = models.IntegerField(default=0)
     picture = models.ImageField(upload_to='upload/product/', null=True, blank=True)
     is_available = models.BooleanField(default=True)
-    tags = models.ManyToManyField(Tag, blank=True)
+    tags = models.ManyToManyField(Tag, blank=True, null=True)
 
 
     def __str__(self):
