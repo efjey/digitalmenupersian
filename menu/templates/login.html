@@ -39,7 +39,7 @@
 </head>
 
 <body class="index-page">
-  {% if messages %}
+    {% if messages %}
         {% for message in messages %}
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             {{ message }}
@@ -47,7 +47,6 @@
           </div>
         {% endfor %}
     {% endif %}
-
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container position-relative d-flex align-items-center justify-content-between">
@@ -70,13 +69,10 @@
           <li class="dropdown"><a href="#"><span>حساب کاربری</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">حساب شما</a></li>
-              {% if user.is_authenticated %}
-              <li><a href="{% url 'logout_user' %}">خروج از حساب</a></li>
-              <li><a href="#">سفارشات</a></li>
-              {% else %}
-              <li><a href="{% url 'login_user'%}">ورود به حساب</a></li>
-              <li><a href="{% url 'login_user'%}">ایجاد حساب</a></li>
-              {% endif %}
+              
+              <li><a href="#login">ورود به حساب</a></li>
+              <li><a href="login_user">ایجاد حساب</a></li>
+              {% comment %} <li><a href="#">سفارشات</a></li> {% endcomment %}
             </ul>
           </li>
           <li><a href="#contact">تماس با  ما</a></li>
@@ -91,24 +87,26 @@
 
   <main class="main">
 
+    
+
     <!-- Hero Section -->
     <section id="hero" class="hero section">
       <div class="container-fluid hero-container" data-aos="fade-up">
         <div class="row g-0 align-items-center">
           <div class="col-lg-6 content-col">
             <div class="content-wrapper">
-              <div class="status-badge"> ناهار در خدمتیم</div>
-              <h2>از لحظه لذت ببر، لقمه به لقمه</h2>
-              <p>سفری از طعم‌ها را در رستوران نفیس ما کشف کنید. خود را در یک تجربه غذاخوری لذت‌بخش که با شور و اشتیاق و دقت ساخته شده است، غرق کنید.</p>
+              <div class="status-badge">تقدیم با عشق</div>
+              <h2> حساب کاربری</h2>
+              <p>اگر حساب کاربری از قبل دارید وارد شوید و اگر نه حساب کاربری جدید بسازید &#129505;</p>
 
-              <div class="opening-hours" data-aos="fade-up" data-aos-delay="500">
+              {% comment %} <div class="opening-hours" data-aos="fade-up" data-aos-delay="500">
                 <i class="bi bi-clock"></i>
                 <span> همه روز از 12 تا 17 (شعبه بابل جمعه ها تعطیل ) </span>
-              </div>
+              </div> {% endcomment %}
 
               <div class="btn-group">
-                <a href="#book-a-table" class="btn btn-book">آدرس و اطلاعات تماس</a>
-                <a href="#menu" class="btn btn-menu">منوی ما را کاوش کنید</a>
+                <a href="#login" class="btn btn-book">ورود به حساب کاربری</a>
+                <a href="#menu" class="btn btn-menu">ایجاد حساب کاربری جدید </a>
               </div>
 
               <div class="social-links">
@@ -163,6 +161,38 @@
       </div>
 
     </section><!-- /Hero Section -->
+
+    <!-- login Section -->
+
+    <section id="login" class="login section">
+        <div class="container">
+            <div class="row">
+                <center>
+                    <form method="POST" action="{% url 'login_user'%}">
+                        {% csrf_token %}
+
+                        <div class="mb-3">
+                          <label  class="form-label">نام کاربری</label>
+                          <input type="text" class="form-control" name="username">
+                          <div id="emailHelp" class="form-text">We'll never share your info with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label  class="form-label" name="password">رمز عبور</label>
+                          <input type="password" class="form-control" name="password">
+                        </div>
+                        {% comment %} <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                           <label class="form-check-label" for="exampleCheck1">Check me out</label> 
+                        </div> {% endcomment %}
+                        <button type="submit" class="btn btn-primary">ورود</button>
+
+                      </form>
+                </center>
+            </div>
+        </div>
+    </section>
+
+    <!-- /login Section -->
 
         <!-- Menu Section -->
         <section id="menu" class="menu section">
