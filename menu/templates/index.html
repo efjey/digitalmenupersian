@@ -69,7 +69,7 @@
           {% comment %} <li><a href="#events">رویداد ها</a></li> {% endcomment %}
           <li class="dropdown"><a href="#"><span>حساب کاربری</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
-              <li><a href="#">حساب شما</a></li>
+              <li><a href="login_user">حساب شما</a></li>
               {% if user.is_authenticated %}
               <li><a href="{% url 'logout_user' %}">خروج از حساب</a></li>
               <li><a href="#">سفارشات</a></li>
